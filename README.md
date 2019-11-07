@@ -18,7 +18,8 @@ To use:
  
  - Download the file listing into a location on your machine.
  
- - Download and untar the directory tree containing the LLAMA images.
+ - Download and untar the directory tree containing the LLAMA images. They are not included in this repository.
+   Contact David Rosario directly for access to these images (several GB in total size).
  
  - Edit the script variables imagesroot, maintableroot, listroot to point to the directories with the various tables
    and image files.
