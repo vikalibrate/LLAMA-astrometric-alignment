@@ -6,6 +6,7 @@ import subprocess
 
 import numpy as np
 
+import matplotlib
 import matplotlib.pyplot as plt
 
 from astropy.io import fits
@@ -30,14 +31,14 @@ Options:
 """
 
 OnlyIncomplete = False  # Only run on the datasets for which an astrometric solution has not been found yet
-# The local table 'astrometric_correction.logtable' lists the object names and waveband which have been successfully corrected
+# The local table 'completed_astrometric_correction.txt' lists the object names and waveband which have been successfully corrected
 
 # DAO source-finding configuration
 DefaultThreshold = True  # If True, use defaults for each camera/filter as defined in the code below
 UserThreshold    = 5.0   # If DefaultThreshold is False, use this as the DAO source-finding threshold SNR
 # Parameters to adaptively change the DAO threshold
 AdaptThreshold = True  # If set, then increase the threshold in multiplicative steps of 2 till the number of sources < AdaptiveNCut  
-AdaptiveNCut   = 120    # The max number of sources that should be found by DAO. Used in Adaptive mode, and to provide source-finding advice
+AdaptiveNCut   = 80    # The max number of sources that should be found by DAO. Used in Adaptive mode, and to provide source-finding advice
 
 # GAIA catalog parameters
 PhotCut = -99.0 # Apply this gmag cut to the GAIA catalog. If <= 0, no cut is applied.  
@@ -46,15 +47,18 @@ gaia_match_tolerance = 5.0 # Crossmatch tolerance between identified stars and G
 # Set true to examine matched stars visually in cutouts
 ExamineMatches = True
 
-imagesroot = '/home/rosario/data/LLAMA/Imaging/HST/HST-LLAMA/image_collection/'
+# Directories which contain various necessary files and images. Change as required.
+imagesroot = '/home/rosario/data/LLAMA/Imaging/HST/HST-LLAMA/image_collection/' # root of the LLAMA images directory tree
+maintableroot = '/home/rosario/Projects/LLAMA/' # dir with the main LLAMA data table
+listroot='/home/rosario/Projects/LLAMA/HST_LLAMA/file_management/' # dir with the table that lists HST-LLAMA image files
 
-llama_table = Table.read('/home/rosario/Projects/LLAMA/llama_main_properties.fits',format='fits')
+llama_table = Table.read(maintableroot+'llama_main_properties.fits',format='fits')
 
-listroot='/home/rosario/Projects/LLAMA/HST_LLAMA/file_management/' # dir which has the table that lists HST-LLAMA image files
 file_listing = Table.read(listroot+'final_working_images.tab',format='ascii',data_start=1) 
 
-if os.path.isfile('astrometric_correction.logtable'):
-	complete_table = Table.read('astrometric_correction.logtable',format='ascii.commented_header')
+# Initialise the logtable if one does not exist
+if os.path.isfile('completed_astrometric_correction.txt'):
+	complete_table = Table.read('completed_astrometric_correction.txt',format='ascii.commented_header')
 
 complete_objid    = []
 complete_waveband = []
@@ -63,8 +67,8 @@ for ifile in range(len(file_listing)):
 	
 	plt.close('all')
 	
-#	Only used for testing purposes
-#	if ifile != 5:
+#	TEST MODE: Comment next two lines if running for posterity
+#	if ifile != 0:
 #		continue
 
 	objname = file_listing['ObjID'][ifile].strip()   # Galaxy ID matching LLAMA naming scheme 
@@ -251,7 +255,8 @@ for ifile in range(len(file_listing)):
 				stampax.tick_params(axis='both',top=False,bottom=False,left=False,right=False,\
 									labeltop=False,labelbottom=False,labelleft=False,labelright=False)
 				stampfig.text(0.02+(ix+0.15)*dx,0.98-(iy+0.95)*dy,str(istar),ha='center',va='bottom',size='small',color='yellow')
-			plt.show()
+			if not matplotlib.is_interactive():
+				plt.show()
 			
 			ch = input('Continue? (y/n): ').strip()
 			if ch == 'n':
