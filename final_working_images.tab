@@ -1,0 +1,90 @@
+  ObjID                  Filename  Instrument  Filter     ExpTime
+ ESO021     ESO021_wfc3_F606W_drc        WFC3   F606W     1751.00
+ ESO021   ESO021_wfc3ir_F160W_drz        WFC3   F160W      833.81
+ ESO093     ESO093_wfc3_F606W_drc        WFC3   F606W     1867.00
+ ESO093   ESO093_wfc3ir_F160W_drz        WFC3   F160W      683.81
+ ESO137             n3zb2c010_mos      NICMOS   F160W      639.91
+ ESO137          ESO137_wfpc2_drz       WFPC2   F606W      500.00
+ ESO208   ESO208_wfc3ir_F160W_drz        WFC3   F160W      833.81
+ ESO208     ESO208_wfc3_F606W_drc        WFC3   F606W     1567.00
+ IC4653   IC4653_wfc3ir_F160W_drz        WFC3   F160W      833.81
+ IC4653     IC4653_wfc3_F606W_drc        WFC3   F606W     1643.00
+ MCG514     MCG514_wfc3_F606W_drc        WFC3   F606W     1547.00
+ MCG514   MCG514_wfc3ir_F160W_drz        WFC3   F160W      683.81
+ MCG523   MCG523_wfc3ir_F160W_drz        WFC3   F160W      683.81
+ MCG523     MCG523_wfc3_F606W_drc        WFC3   F606W     1563.00
+# MCG630     MCG630_wfc3_F606W_drc        WFC3   F606W      760.00
+ MCG630             ib5f09010_drz        WFC3   F547M     2290.00
+ MCG630   MCG630_wfc3ir_F160W_drz        WFC3   F160W     1611.74
+NGC1079             idkv03020_drc        WFC3   F475W      700.00
+NGC1079             idkv03030_drz        WFC3   F160W      596.92
+# NGC1079             idkv03010_drc        WFC3   F814W      500.00
+NGC1315    NGC1315_wfc3_F606W_drc        WFC3   F606W     1539.00
+NGC1315  NGC1315_wfc3ir_F160W_drz        WFC3   F160W      683.81
+NGC1365         NGC1365_wfpc2_drz       WFPC2   F606W      560.00
+NGC1365             n3zd0k010_mos      NICMOS   F160W      383.88
+NGC1375             j90x20020_drc         ACS   F475W      760.00
+NGC1375             ib1h02020_drz        WFC3   F160W     1196.93
+NGC1947  NGC1947_wfc3ir_F160W_drz        WFC3   F160W      683.81
+NGC1947    NGC1947_wfc3_F606W_drc        WFC3   F606W     1795.00
+NGC2110         NGC2110_wfpc2_drz       WFPC2   F606W      500.00
+NGC2110             n4sb07020_mos      NICMOS   F200N     1215.39
+NGC2775             idkv12030_drz        WFC3   F160W      596.92
+# NGC2775             idkv12020_drz        WFC3   F475W      700.00
+NGC2775         NGC2775_wfpc2_drz       WFPC2   F606W      400.00
+NGC2992         NGC2992_wfpc2_drz       WFPC2   F606W      500.00
+NGC2992             n4sb08050_mos      NICMOS   F200N      831.56
+NGC3081         NGC3081_wfpc2_drz       WFPC2   F606W      500.00
+NGC3081          NGC3081_nic3_cal      NICMOS   F160W      703.94
+NGC3175  NGC3175_wfc3ir_F160W_drz        WFC3   F160W      683.81
+NGC3175    NGC3175_wfc3_F606W_drc        WFC3   F606W     1547.00
+NGC3351         NGC3351_wfpc2_drz       WFPC2   F606W      560.00
+NGC3351             n6lf20020_mos      NICMOS   F190N      767.84
+NGC3717    NGC3717_wfc3_F606W_drc        WFC3   F606W     1563.00
+NGC3717  NGC3717_wfc3ir_F160W_drz        WFC3   F160W      683.81
+NGC3749  NGC3749_wfc3ir_F160W_drz        WFC3   F160W      683.81
+NGC3749    NGC3749_wfc3_F606W_drc        WFC3   F606W     1583.00
+NGC3783  NGC3783_wfc3ir_F160W_drz        WFC3   F160W     1611.74
+# NGC3783    NGC3783_wfc3_F606W_drc        WFC3   F606W      790.00
+NGC3783             ib5e03010_drz        WFC3   F547M     2300.00
+NGC4224  NGC4224_wfc3ir_F160W_drz        WFC3   F160W      683.81
+NGC4224    NGC4224_wfc3_F606W_drc        WFC3   F606W     1527.00
+NGC4235             n44b20010_mos      NICMOS   F160W      767.86
+NGC4235         NGC4235_wfpc2_drz       WFPC2   F606W      500.00
+NGC4254         NGC4254_wfpc2_drz       WFPC2   F606W      560.00
+NGC4254          NGC4254_nic3_cal      NICMOS   F160W      703.94
+NGC4260             n3zb96010_mos      NICMOS   F160W      639.91
+NGC4260         NGC4260_wfpc2_drz       WFPC2   F606W      800.00
+NGC4388             ibig07040_drz        WFC3   F438W      410.00
+# NGC4388             ibly02m4q_drz        WFC3   F547M      194.00
+NGC4388             ibig07020_drz        WFC3   F160W      422.07
+NGC4593             ib5e06010_drz        WFC3   F547M     2240.00
+NGC4593          NGC4593_nic3_cal      NICMOS   F160W      703.94
+# NGC4593             j9dq02031_drz         ACS   F550M      600.00
+NGC5037    NGC5037_wfc3_F606W_drc        WFC3   F606W     1539.00
+NGC5037  NGC5037_wfc3ir_F160W_drz        WFC3   F160W      683.81
+NGC5128             ib6wra090_drz        WFC3   F160W     1797.69
+NGC5128             ib6wrc060_drc        WFC3   F547M     1250.00
+NGC5506         NGC5506_wfpc2_drz       WFPC2   F606W      500.00
+NGC5506             n3zb1v010_mos      NICMOS   F160W      639.91
+# NGC5728             icml09040_drz        WFC3   F438W      532.00
+NGC5728             icml09020_drz        WFC3   F160W      422.07
+NGC5728             icml09050_drz        WFC3   F814W     1912.00
+NGC5845             n4rw67010_mos      NICMOS   F160W      639.85
+NGC5845         NGC5845_wfpc2_drz       WFPC2   F555W      400.00
+NGC5921             idja13010_drz        WFC3   F475W      836.00
+# NGC5921             idja13020_drz        WFC3   F814W      738.00
+NGC5921             idja13030_drz        WFC3   F160W       52.78
+# NGC6814         NGC6814_wfpc2_drz       WFPC2   F606W      500.00
+NGC6814             iby112010_drz        WFC3   F555W     2400.00
+NGC6814             iby113030_drz        WFC3   F160W     1047.70
+NGC7172  NGC7172_wfc3ir_F160W_drz        WFC3   F160W     1211.74
+NGC7172    NGC7172_wfc3_F606W_drc        WFC3   F606W     1224.00
+ NGC718     NGC718_wfc3_F606W_drc        WFC3   F606W     1523.00
+ NGC718   NGC718_wfc3ir_F160W_drz        WFC3   F160W      683.81
+NGC7213  NGC7213_wfc3ir_F160W_drz        WFC3   F160W     1611.74
+NGC7213    NGC7213_wfc3_F606W_drc        WFC3   F606W      876.00
+NGC7582             n3zb48010_mos      NICMOS   F160W      639.91
+NGC7582         NGC7582_wfpc2_drz       WFPC2   F606W      900.00
+NGC7727         NGC7727_wfpc2_drz       WFPC2   F555W     2633.00
+NGC7727             n49j14060_mos      NICMOS   F160W      255.92
