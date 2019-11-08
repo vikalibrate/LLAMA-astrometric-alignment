@@ -1,7 +1,9 @@
 # LLAMA-astrometric-alignment
 
 Code and documentation for a script used to create astrometrically aligned multi-band images of LLAMA galaxies.
+
 Dependencies: Python 3, AstroPy, NumPy, Photutils, Matplotlib
+
 Repository contains :
   the main code as a script, 
   the LLAMA sample data table, 
